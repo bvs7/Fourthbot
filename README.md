@@ -1,3 +1,5 @@
+https://www.woolha.com/tutorials/node-js-using-google-sheets-api-with-oauth-2
+
 # Fourthbot
 Fourth DM in our DnD group
 
