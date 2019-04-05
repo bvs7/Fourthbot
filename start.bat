@@ -1,2 +1,0 @@
-node FourthBot.js
-pause
