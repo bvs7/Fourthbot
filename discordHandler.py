@@ -101,8 +101,8 @@ async def roll(client,message,words):
     if len(words) == 1:
         msg = ("Roll dice how you would see the dice written\n"
                 "Examples: **!roll d20** : roll 1 d20\n"
-                "**!roll 8d6 : roll 8 d6s \n"
-                "**!roll 1d20 2d12 3d8")
+                "**!roll 8d6** : roll 8 d6s \n"
+                "**!roll 1d20 2d12 3d8**")
         await client.send_message(message.channel,msg)
     output = []
     for die in words[1:]:

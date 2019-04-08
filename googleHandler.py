@@ -22,7 +22,7 @@ class googleHandler:
                 flow = InstalledAppFlow.from_client_secrets_file(
                     'config/credentials.json', self.SCOPES)
                 creds = flow.run_local_server()
-            with open('token.pickle','wb') as token:
+            with open('config/token.pickle','wb') as token:
                 pickle.dump(creds,token)
         self.service = build('sheets','v4',credentials=creds)
 
