@@ -20,18 +20,12 @@ class Data:
 
 class discordHandler:
     def __init__(self, config_filename,handler):
-        # Load in config file
-        self.init_config(config_filename)
-        # Initialize Log
-        self.init_log()
-        # Create basic commands
-        self.init_commands()
-        # Remember users
-        self.init_remember_users()
-        # Create Client
-        self.client = discord.Client()
-        # Create parse input
-        self.data = Data(self.client, handler, self.users)
+        self.init_config(config_filename) # Get config data for Discord connection
+        self.init_log() # Initialize logging system
+        self.init_commands() # Set basic commands up
+        self.init_remember_users() # Recall user data
+        self.client = discord.Client() # Create client
+        self.data = Data(self.client, handler, self.users) #For passing into functions
         self.init_client()
     def init_config(self, config_filename):
         if not os.path.exists(config_filename):
@@ -65,7 +59,7 @@ class discordHandler:
             else:
                 await self.parse(message)
     def init_remember_users(self):
-        with open('config/users.json') as users_file:
+        with open('config/users.json','r') as users_file:
             self.users = json.load(users_file)
     def run(self):
         self.client.run(self.config['token'])
