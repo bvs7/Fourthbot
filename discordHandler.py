@@ -12,17 +12,26 @@ import re
 import random     
 import datetime  
 
+class Data:
+    def __init__(self,client,handler,users):
+        self.client = client
+        self.handler = handler
+        self.users = users
 
 class discordHandler:
-    def __init__(self, config_filename):
+    def __init__(self, config_filename,handler):
         # Load in config file
         self.init_config(config_filename)
         # Initialize Log
         self.init_log()
         # Create basic commands
         self.init_commands()
+        # Remember users
+        self.init_remember_users()
         # Create Client
         self.client = discord.Client()
+        # Create parse input
+        self.data = Data(self.client, handler, self.users)
         self.init_client()
     def init_config(self, config_filename):
         if not os.path.exists(config_filename):
@@ -55,7 +64,9 @@ class discordHandler:
                 return
             else:
                 await self.parse(message)
-
+    def init_remember_users(self):
+        with open('config/users.json') as users_file:
+            self.users = json.load(users_file)
     def run(self):
         self.client.run(self.config['token'])
 
@@ -71,15 +82,15 @@ class discordHandler:
         parse_func = self.commands[command[1:]][0]
         print('Command:',command[1:] ,':from',message.author.name)
         print('Command:',command[1:] ,':from',message.author.name,file=self.log,flush=True)
-        await parse_func(self.client,message,words)
+        await parse_func(self.data,message)
 
     # Basic command functions
-    async def say_hello(self,client,message,words):
+    async def say_hello(self,data,message):
         msg = 'Hello {0.author.mention}'.format(message)
         print('Response: ', msg)
         print('Response: ', msg, file=self.log,flush=True)
         await self.client.send_message(message.channel,msg)
-    async def about(self,client,message,words):
+    async def about(self,data,message):
         msg = ("I am FourthBot v0.1.  I act as the 4th DM for the group.  You can ask "
             "me lots of things or use me to roll dice through discord, or use me to "
             "keep track of your characters, experience, and treasure.  I am not "
@@ -87,7 +98,7 @@ class discordHandler:
         print('Response: About message')
         print('Response: About message',file=self.log,flush=True)
         await self.client.send_message(message.channel,msg)
-    async def help(self,client,message,words):
+    async def help(self,data,message):
         msg = "Here is an updated list of commands: \n"
         for key in self.commands:
             next_line = '  **!' +key+'**: '+self.commands[key][1]+'\n'
@@ -97,13 +108,14 @@ class discordHandler:
         await self.client.send_message(message.channel,msg)
 
 
-async def roll(client,message,words):
+async def roll(data,message):
+    words = message.content.split()
     if len(words) == 1:
         msg = ("Roll dice how you would see the dice written\n"
                 "Examples: **!roll d20** : roll 1 d20\n"
                 "**!roll 8d6** : roll 8 d6s \n"
                 "**!roll 1d20 2d12 3d8**")
-        await client.send_message(message.channel,msg)
+        await data.client.send_message(message.channel,msg)
     output = []
     for die in words[1:]:
         matchObj = re.match(r'(\d*)d(\d+)', die)
@@ -121,7 +133,7 @@ async def roll(client,message,words):
             rolls.append(random.randint(1,die_size))
         output.append(rolls)
     
-    await client.send_message(message.channel,str(output))
+    await data.client.send_message(message.channel,str(output))
         
         
 

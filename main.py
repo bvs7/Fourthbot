@@ -5,14 +5,16 @@ import discordHandler
 import random
 import datetime
 import re
+import json
 ## Discord Bot Commands
-async def roll(client,message,words):
+async def roll(data,message):
+    words = message.content.split()
     msg = ("Roll dice how you would see the dice written\n"
             "Examples: **!roll d20** : roll 1 d20\n"
             "**!roll 8d6** : roll 8 d6s \n"
             "**!roll 1d20 2d12 3d8**")
     if len(words) == 1:
-        await client.send_message(message.channel,msg)
+        await data.client.send_message(message.channel,msg)
     output = []
     for die in words[1:]:
         matchObj = re.match(r'(\d*)d(\d+)', die)
@@ -33,15 +35,43 @@ async def roll(client,message,words):
     for values in output:
         sum_rolls = sum_rolls + sum(values)
     msg = str(output) + ' : ' + str(sum_rolls)
-    await client.send_message(message.channel,msg)
+    await data.client.send_message(message.channel,msg)
 
-async def oof(client, message, words):
+async def oof(data,message):
     msg = ("Big oof my dudes.")
-    await client.send_message(message.channel,msg)
+    await data.client.send_message(message.channel,msg)
+
+async def xp(data,message):
+    words = message.content.split()
+    specific_flag = False
+    specific_char = []
+    if len(words) >= 2:
+        specific_flag = True
+        for character in words[1:]:
+            specific_char.append(character.lower())
+    # Figure out who sent the message
+    author_id = message.author.id
+    author = data.users[author_id]
+    dms = ['Chris','Brian','Tommy']
+    raw_data = data.handler.read('Character Chart!A2:E11')
+    msg = '```'
+    for character in raw_data:
+        if author == character[0] or author in dms:
+            if not specific_flag or character[1].lower() in specific_char:
+                msg = msg + '{:12}{:5} XP Level {:3}({:5} XP to next level)\n'.format(character[1],
+                                                character[2],character[3],character[4])
+    msg = msg + '```'
+    if msg == '``````':
+        msg = 'No characters found, please check your spelling! :clap:'
+    await data.client.send_message(message.channel,msg)
 
 if __name__ == '__main__':
     random.seed(datetime.datetime.now())
-    D = discordHandler.discordHandler('config/discord.json')
+    G = googleHandler.googleHandler('1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo')
+    D = discordHandler.discordHandler('config/discord.json',G)
+
     D.add_command('roll',roll,'Roll Dice')
     D.add_command('oof',oof,'For those oofs that are bound to happen.')
+    D.add_command('xp',xp,'Still under development')
+
     D.run()
