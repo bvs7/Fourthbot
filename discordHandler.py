@@ -17,6 +17,7 @@ class Data:
         self.client = client
         self.handler = handler
         self.users = users
+        self.dms = ['Chris','Brian','Tommy']
 
 class discordHandler:
     def __init__(self, config_filename,handler):
@@ -75,7 +76,7 @@ class discordHandler:
         if not command[1:] in self.commands: return
         parse_func = self.commands[command[1:]][0]
         print('Command:',command[1:] ,':from',message.author.name)
-        print('Command:',command[1:] ,':from',message.author.name,file=self.log,flush=True)
+        print('Command:',command[1:] ,':from',message.author.name,file=self.log,flush=True) 
         await parse_func(self.data,message)
 
     # Basic command functions
@@ -85,7 +86,7 @@ class discordHandler:
         print('Response: ', msg, file=self.log,flush=True)
         await self.client.send_message(message.channel,msg)
     async def about(self,data,message):
-        msg = ("I am FourthBot v0.1.  I act as the 4th DM for the group.  You can ask "
+        msg = ("I am FourthBot v1.1.  I act as the 4th DM for the group.  You can ask "
             "me lots of things or use me to roll dice through discord, or use me to "
             "keep track of your characters, experience, and treasure.  I am not "
             "finished yet though!  Use !help to see all of my current commands.")
@@ -93,12 +94,45 @@ class discordHandler:
         print('Response: About message',file=self.log,flush=True)
         await self.client.send_message(message.channel,msg)
     async def help(self,data,message):
-        msg = "Here is an updated list of commands: \n"
-        for key in self.commands:
-            next_line = '  **!' +key+'**: '+self.commands[key][1]+'\n'
-            msg = msg + next_line
-        print('Response: Help message')
-        print('Response: Help message',file=self.log,flush=True)
+        words = message.content.split()
+        if len(words)==1:
+            msg = "Here is an updated list of commands: \n"
+            for key in self.commands:
+                next_line = '  **!' +key+'**: '+self.commands[key][1]+'\n'
+                msg = msg + next_line
+            msg = msg + "Use **!help command** (ie. **hi**) to learn more about specific commands"
+            print('Response: Help message')
+            print('Response: Help message',file=self.log,flush=True)
+        else:
+            if words[1] == 'hi':
+                msg = """Use **!hi** to say hello to FourthBot. This command is useful
+                        for checking if the bot is currently on, or if you are lonely
+                        and just want someone to say hello to you <3"""
+            elif words[1] == 'about':
+                msg = """Use **!about** to learn more about what FourthBot is designed
+                        to do.  As the program changes, the about command will change
+                        so you can keep up with major changes!"""
+            elif words[1] == 'help':
+                msg = """Dude.  You're already using help... """
+            elif words[1] == 'roll':
+                msg = """Use **!roll** to roll dice.\n
+                        You can roll any die of any size from 2-100, and you can roll
+                        any number of dice. The number before the d says how many dice
+                        you want to roll, and the number after the d says what size
+                        die you want to use.\n\n
+                        Example: 2d20 = Roll 2 d20's \n\n
+                        You can also roll multiple different dice by using multiple commands
+                        at once. \n\n
+                        Example: d20 5d6 2d7 = roll 1 d20, 5 d6s, and 2 d7s\n\n
+                        The number at the end of the numbers is the sum of the numbers."""
+            elif words[1] == 'xp':
+                msg = """Use **!xp**"""
+            elif words[1] == 'current':
+                msg = """Use **!current**"""
+            elif words[1] == 'bank':
+                msg = """Use **!bank**"""
+            elif words[1] == 'session':
+                msg = """(Don't) Use **!session**"""
         await self.client.send_message(message.channel,msg)
 
 
@@ -134,6 +168,6 @@ async def roll(data,message):
 
 if __name__ == '__main__':
     random.seed(datetime.datetime.now())
-    D = discordHandler('config/discord.json')
+    D = discordHandler('config/discord.json',[])
     D.add_command('roll', roll, 'Roll Dice')
     D.run()

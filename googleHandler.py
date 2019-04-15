@@ -6,7 +6,7 @@ from google.auth.transport.requests import Request
 
 class googleHandler:
     def __init__(self, sheet_id):
-        self.SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
+        self.SCOPES = ["https://www.googleapis.com/auth/drive"]
         self.sheet_id = sheet_id
         self.get_credentials()
 
@@ -36,8 +36,18 @@ class googleHandler:
             return ''
         else:
             return values
+
+    def append(self,range,data):
+        sheet = self.service.spreadsheets()
+        body_data = {"range": range, "majorDimension":'ROWS',"values": data}
+        result = sheet.values().append(spreadsheetId=self.sheet_id,
+                                        range=range, body=body_data, 
+                                        valueInputOption='USER_ENTERED').execute()
+        return
+    
 if __name__ == '__main__':
     G = googleHandler('1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo')
     values = G.read('Sheet1!A1')
     print(values)
+    G.append('Session Tracker!A:C',[['Test2','Test22','Test222']])
 
