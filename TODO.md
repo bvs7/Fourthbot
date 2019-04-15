@@ -1,1 +1,2 @@
 -for bank command spending, allow players to use any capitalization.
+-bank command is timing out sometimes - figure out solution.
