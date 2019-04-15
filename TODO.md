@@ -1,0 +1,1 @@
+-for bank command spending, allow players to use any capitalization.

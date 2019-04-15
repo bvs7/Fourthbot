@@ -151,10 +151,6 @@ async def bank(data,message):
         else: #Date,Author,Player,Character,Debits,Credits #Delta
             data.handler.append('Bank Tracker!A:G',[[str(datetime.date.today()),author,author,character,'0', spend,'-'+spend]])
             msg = "Confirmed! {} gained {} xp!".format(character,str(spend))
-
-
-
-
     await data.client.send_message(message.channel,msg)
 
 

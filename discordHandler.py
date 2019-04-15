@@ -105,34 +105,43 @@ class discordHandler:
             print('Response: Help message',file=self.log,flush=True)
         else:
             if words[1] == 'hi':
-                msg = """Use **!hi** to say hello to FourthBot. This command is useful
-                        for checking if the bot is currently on, or if you are lonely
-                        and just want someone to say hello to you <3"""
+                msg = ("Use **!hi** to say hello to FourthBot. This command is useful"
+                        " for checking if the bot is currently on, or if you are lonely"
+                        " and just want someone to say hello to you <3")
             elif words[1] == 'about':
-                msg = """Use **!about** to learn more about what FourthBot is designed
-                        to do.  As the program changes, the about command will change
-                        so you can keep up with major changes!"""
+                msg = ("Use **!about** to learn more about what FourthBot is designed "
+                        "to do.  As the program changes, the about command will change "
+                        "so you can keep up with major changes!")
             elif words[1] == 'help':
-                msg = """Dude.  You're already using help... """
+                msg = ("Dude.  You're already using help... but use **!help (command)** "
+                        "to learn about new commands ")
             elif words[1] == 'roll':
-                msg = """Use **!roll** to roll dice.\n
-                        You can roll any die of any size from 2-100, and you can roll
-                        any number of dice. The number before the d says how many dice
-                        you want to roll, and the number after the d says what size
-                        die you want to use.\n\n
-                        Example: 2d20 = Roll 2 d20's \n\n
-                        You can also roll multiple different dice by using multiple commands
-                        at once. \n\n
-                        Example: d20 5d6 2d7 = roll 1 d20, 5 d6s, and 2 d7s\n\n
-                        The number at the end of the numbers is the sum of the numbers."""
+                msg = ("Use **!roll** to roll dice.\n"
+                        "You can roll any die of any size from 2-100, and you can roll "
+                        "any number of dice. The number before the d says how many dice "
+                        "you want to roll, and the number after the d says what size "
+                        "die you want to use.\n\n"
+                        "Example: 2d20 = Roll 2 d20's \n\n"
+                        "You can also roll multiple different dice by using multiple commands "
+                        "at once. \n\n"
+                        "Example: d20 5d6 2d7 = roll 1 d20, 5 d6s, and 2 d7s\n\n"
+                        "The number at the end of the numbers is the sum of the numbers.")
             elif words[1] == 'xp':
-                msg = """Use **!xp**"""
+                msg = ("Use **!xp** to check your characters' current xp totals.  "
+                        "If you only want to see xp for a single character, use **!xp (character)**")
             elif words[1] == 'current':
-                msg = """Use **!current**"""
+                msg = ("Use **!current** to check who your current character is.  Your current "
+                        "character is the one that you use during sessions, and the one that "
+                        "will be awarded session xp.  To change your current character, use "
+                        "**!current (character)**.")
             elif words[1] == 'bank':
-                msg = """Use **!bank**"""
+                msg = ("Use **!bank** to check how many bonus xp you have banked.  You can also "
+                        " use **!bank (character) (xp to spend) confirm** to spend your xp points "
+                        "on a specific character.  You cannot spend more points than you have avaliable to you.")
             elif words[1] == 'session':
-                msg = """(Don't) Use **!session**"""
+                msg = ("Don't use **!session** unless you are a DM entering session xp from the last session."
+                        " If you are a DM, you can use **!session (amount of xp)** to award all current "
+                        "characters xp for the current session.")
         await self.client.send_message(message.channel,msg)
 
 
