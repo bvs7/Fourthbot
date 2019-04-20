@@ -86,9 +86,9 @@ class discordHandler:
         print('Response: ', msg, file=self.log,flush=True)
         await self.client.send_message(message.channel,msg)
     async def about(self,data,message):
-        msg = ("I am FourthBot v1.1.  I act as the 4th DM for the group.  You can ask "
+        msg = ("I am FourthBot v1.2.  I act as the 4th DM for the group.  You can ask "
             "me lots of things or use me to roll dice through discord, or use me to "
-            "keep track of your characters, experience, and treasure.  I am not "
+            "keep track of your characters, experience,spells, and treasure.  I am not "
             "finished yet though!  Use !help to see all of my current commands.")
         print('Response: About message')
         print('Response: About message',file=self.log,flush=True)
@@ -142,6 +142,12 @@ class discordHandler:
                 msg = ("Don't use **!session** unless you are a DM entering session xp from the last session."
                         " If you are a DM, you can use **!session (amount of xp)** to award all current "
                         "characters xp for the current session.")
+            elif words[1] == 'bonus':
+                msg = ("Don't use **!bonus** unless you are a DM awarding bonus xp to players.  "
+                        "If you are a DM, use **!bonus (amount)** in a player's individual chat "
+                        "to grant that player bonus xp.  The bonus xp will go straight to the bank.")
+            elif words[1] == 'spell':
+                msg = ("Use **!spell (spell name)** to look up the description for a spell.  ")
         await self.client.send_message(message.channel,msg)
 
 
