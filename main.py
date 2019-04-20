@@ -6,6 +6,7 @@ import random
 import datetime
 import re
 import json
+import string
 ## Discord Bot Commands
 async def roll(data,message):
     words = message.content.split()
@@ -202,6 +203,29 @@ async def bonus(data,message):
             msg = "{} awarded {} {} bonus xp.  Congrats!".format(author,player,str(number))
     await data.client.send_message(message.channel,msg)
 
+async def spell(data,message):
+    words = message.content.split()
+    spell_name = " ".join(words[1:])
+    translator = str.maketrans('','',string.punctuation)
+    spell_name = spell_name.translate(translator)
+    spell_name = spell_name.lower()
+    with open('config/spells2.json') as spell_file:
+        spell_list = json.load(spell_file)
+    if spell_name in spell_list:
+        spell_data = spell_list[spell_name]
+        if 'description' not in spell_data:
+            spell_data['description'] = 'No Spell Description Found.  Bug Chris to add it!'
+        msg = ("```\n{0}\n Level: {1}\n School: {2}\n Casting Time: {3}\n" 
+            " Ritual: {4}  | Concentration: {5}\n Source: {6} \n\n {7}```"
+            ).format(spell_name,str(spell_data["level"]),spell_data["school"], 
+                spell_data["time"],spell_data["ritual"],spell_data["concentration"],
+                spell_data["source"],spell_data["description"])
+    else:
+        msg = "Spell not recognized"
+    print(msg)
+    await data.client.send_message(message.channel,msg)
+
+
 
             
 
@@ -218,5 +242,6 @@ if __name__ == '__main__':
     D.add_command('bank',bank,'Check or use your banked bonus xp')
     D.add_command('session',session,'DMS ONLY: Add session xp')
     D.add_command('bonus',bonus,'DMS ONLY: Add bonus xp')
+    D.add_command('spell',spell,"Look up spell information")
 
     D.run()
