@@ -52,10 +52,10 @@ async def xp(data,message):
     # Figure out who sent the message
     author_id = message.author.id
     author = data.users[author_id]
-    raw_data = data.handler.read('Character Chart!A2:G12')
+    raw_data = data.handler.read('Character Chart!A2:G13')
     msg = '```'
     for character in raw_data:
-        if author == character[0] or author in data.dms:
+        if author == character[0] or author in data.dms and character[0] is not 'Player':
             if not specific_flag or character[1].lower() in specific_char:
                 msg = msg + '{:10}{:5} XP Level {:3}({:5} XP to next level)\n'.format(character[1],
                                                 character[4],character[5],character[6])
@@ -175,6 +175,34 @@ async def session(data,message):
                 msg = msg+'```'
             data.handler.append('Session Tracker!A:E',session_data)
     await data.client.send_message(message.channel,msg)
+
+async def bonus(data,message):
+    words = message.content.split()
+    author_id = message.author.id
+    author = data.users[author_id]
+    if author not in data.dms:
+        msg = """Sorry kid.  You have to be running the game to use this command."""
+    else:
+        player_flag = False
+        number_flag = False
+        with open('config/character_chats.json','r') as cc_file:
+            chats = json.load(cc_file)
+            if str(message.channel.id) in chats:
+                player_flag = True
+                player = chats[str(message.channel.id)]
+            if words[1].isdigit():
+                number_flag = True
+                number = int(words[1])
+        
+        if not player_flag or not number_flag:
+            msg = "No xp awarded because message did not parse correctly."
+        else:
+            session_data = [[str(datetime.date.today()),author,player,"",str(number),"0",str(number)]]
+            data.handler.append('Bank Tracker!A:G',session_data)
+            msg = "{} awarded {} {} bonus xp.  Congrats!".format(author,player,str(number))
+    await data.client.send_message(message.channel,msg)
+
+
             
 
 
@@ -189,6 +217,6 @@ if __name__ == '__main__':
     D.add_command('current',current,'Check or change your current character')
     D.add_command('bank',bank,'Check or use your banked bonus xp')
     D.add_command('session',session,'DMS ONLY: Add session xp')
-
+    D.add_command('bonus',bonus,'DMS ONLY: Add bonus xp')
 
     D.run()

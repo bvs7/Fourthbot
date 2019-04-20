@@ -368,3 +368,49 @@ Command: xp :from Slenderpwn
 Command: bank :from Slenderpwn
 Command: xp :from E Squared
 Command: bank :from E Squared
+Command: xp :from ScarletRose107
+Command: bank :from ScarletRose107
+Command: bank :from Father Fujimoto
+Command: roll :from Scarybone
+Command: roll :from Scarybone
+Command: roll :from Scarybone
+FourthBot is now online!
+Command: roll :from Scarybone
+Command: roll :from SecondEngineer
+Command: roll :from Scarybone
+FourthBot is now online!
+Command: hi :from Scarybone
+Response:  Hello <@280721872608428032>
+Command: hi :from Scarybone
+Response:  Hello <@!280721872608428032>
+Command: roll :from Scarybone
+Command: roll :from Tsalanski
+Command: roll :from Tsalanski
+FourthBot is now online!
+Command: xp :from Slenderpwn
+Command: bank :from Slenderpwn
+Command: bank :from Slenderpwn
+Command: xp :from Slenderpwn
+Command: bank :from Slenderpwn
+Command: xp :from Scarybone
+Command: help :from SecondEngineer
+Command: xp :from Scarybone
+FourthBot is now online!
+Command: xp :from Scarybone
+Command: bank :from Scarybone
+Command: xp :from Scarybone
+FourthBot is now online!
+FourthBot is now online!
+Command: hi :from Scarybone
+Response:  Hello <@280721872608428032>
+FourthBot is now online!
+Command: bonus :from Scarybone
+Command: bonus :from Shadow Creature 22
+FourthBot is now online!
+Command: bonus :from Scarybone
+FourthBot is now online!
+Command: bonus :from Scarybone
+FourthBot is now online!
+Command: bonus :from Scarybone
+FourthBot is now online!
+Command: bonus :from Scarybone
