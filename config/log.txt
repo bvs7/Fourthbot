@@ -448,3 +448,17 @@ Command: spell :from Scarybone
 Command: spell :from E Squared
 Command: spell :from E Squared
 Command: spell :from E Squared
+FourthBot is now online!
+Command: roll :from SecondEngineer
+Command: help :from Scarybone
+Response: Help message
+Command: help :from Scarybone
+Response: Help message
+FourthBot is now online!
+Command: help :from Scarybone
+Response: Help message
+Command: spell :from ScarletRose107
+Command: spell :from Scarybone
+Command: spell :from ScarletRose107
+FourthBot is now online!
+Command: roll :from Tsalanski
