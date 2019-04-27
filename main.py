@@ -209,17 +209,18 @@ async def spell(data,message):
     translator = str.maketrans('','',string.punctuation)
     spell_name = spell_name.translate(translator)
     spell_name = spell_name.lower()
-    with open('config/spells2.json') as spell_file:
+    with open('config/spells3.json') as spell_file:
         spell_list = json.load(spell_file)
     if spell_name in spell_list:
         spell_data = spell_list[spell_name]
         if 'description' not in spell_data:
             spell_data['description'] = 'No Spell Description Found.  Bug Chris to add it!'
-        msg = ("```\n{0}\n Level: {1}\n School: {2}\n Casting Time: {3}\n" 
+        msg = ("```\n{0}\n Level: {1}\n School: {2}\n Casting Time: {3}\n"
+            "Components: {8}\nDuration: {9}\n" 
             " Ritual: {4}  | Concentration: {5}\n Source: {6} \n\n {7}```"
             ).format(spell_name,str(spell_data["level"]),spell_data["school"], 
                 spell_data["time"],spell_data["ritual"],spell_data["concentration"],
-                spell_data["source"],spell_data["description"])
+                spell_data["source"],spell_data["description"],spell_data["components"],spell_data["duration"])
     else:
         msg = "Spell not recognized"
     print(msg)
