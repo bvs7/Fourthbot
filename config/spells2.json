@@ -396,7 +396,7 @@
         "source": "Elemental Evil",
         "description": "1 Reaction, which you take when you take acid, cold, fire, lighting, or thunder damage.\nThe spell scaptures some of the incoming energy, lessening its effect on you and storing it for your next melee attack.  You have resistance to the triggering damage type until the start of your next turn.  Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends.\n At higer level: When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st."
     },
-    "alarm ritual": {
+    "alarm": {
         "level": 1,
         "school": "Abjuration",
         "time": "1 Minute",
@@ -486,7 +486,7 @@
         "source": "Xanathars Guide To Everything",
         "description": "You awaken the sense of mortality in one creature you can see within range. A construct or an undead is immune to this effect. The target must succeed on a Wisdom saving throw or become frightened of you until the spell ends. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. \n  When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above lst. The creatures must be within 30 feet of each other when you target them. \n  Page: 151  from Xanathar's Guide To Everything"
     },
-    "ceremony ritual": {
+    "ceremony": {
         "level": 1,
         "school": "Abjuration",
         "time": "1 Hour",
@@ -549,7 +549,7 @@
         "source": "Players Handbook",
         "description": "You attempt to compel a creature into a duel. \n  One creature that you can see within range must make a Wisdom saving throw. On a failed save, the creature is drawn to you, compelled by your divine demand. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw each time it attempts to move to a space that is more than 30 feet away from you; if it succeeds on this saving throw, this spell doesn't restrict the target's movement for that turn. \n  The spell ends if you attack any other creature, if you cast a spell that targets a hostile creature other than the target, if a creature friendly to you damages the target or casts a harmful spell on it, or if you end your turn more than 30 feet away from the target. \n  Page: 224  Players Handbook"
     },
-    "comprehend languages ritual": {
+    "comprehend languages": {
         "level": 1,
         "school": "Divination",
         "time": "1 Action",
@@ -585,7 +585,7 @@
         "source": "Players Handbook",
         "description": "For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated. \n  The spell can penetrate most barriers, but it is blocked by 1 foot of stone,\n1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt. \n  Page: 231  Players Handbook"
     },
-    "detect magic ritual": {
+    "detect magic": {
         "level": 1,
         "school": "Divination",
         "time": "1 Action",
@@ -693,7 +693,7 @@
         "source": "Players Handbook",
         "description": "Reaction: When you or a creature within 60 feet of you falls \n  Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature. \n  Page: 239  Players Handbook"
     },
-    "find familiar ritual": {
+    "find familiar": {
         "level": 1,
         "school": "Conjuration",
         "time": "1 Hour",
@@ -801,7 +801,7 @@
         "source": "Elemental Evil",
         "description": "(a drop of water or piece of ice)\n  You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of the point where the ice exploded must succeed on a Dexterity saving throw or take 2d6 cold damage.\n  At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st. \n  Page: 19  from EE Players Companion"
     },
-    "identify ritual": {
+    "identify ": {
         "level": 1,
         "school": "Divination",
         "time": "1 Minute",
@@ -810,7 +810,7 @@
         "source": "Players Handbook",
         "description": "You choose one object that you must touch throughout the casting of the spell. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it.\n  If you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it. \n  Page: 252  Players Handbook"
     },
-    "illusory script ritual": {
+    "illusory script": {
         "level": 1,
         "school": "Illusion",
         "time": "1 Minute",
@@ -873,7 +873,7 @@
         "source": "Players Handbook",
         "description": "Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.\n  The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect. \n  Page: 270  Players Handbook"
     },
-    "purify food and drink ritual": {
+    "purify food and drink": {
         "level": 1,
         "school": "Transmutation",
         "time": "1 Action",
@@ -954,7 +954,7 @@
         "source": "Xanathars Guide To Everything",
         "description": "As you cast this spell, you use the rope to create a circle with a 5-foot radius on the ground or the floor. When you finish casting, the rope disappears and the circle becomes a magic trap.\n  This trap is nearly invisible, requiring a successful Intelligence (Investigation) check against your spell save DC to be discerned.\n  The trap triggers when a Small, Medium, or Large creature moves onto the ground or the floor in the spell's radius. That creature must succeed on a Dexterity saving throw or be magically hoisted into the air, leaving it hanging upside down 3 feet above the ground or the floor. The creature is restrained there until the spell ends.\n  A restrained creature can make a Dexterity saving throw at the end of each of its turns, ending the effect on itself on a success. Alternatively, the creature or someone else who can reach it can use an action to make an Intelligence (Arcana) check against your spell save DC. On a success, the restrained effect ends.\n  After the trap is triggered, the spell ends when no creature is restrained by it. \n  Page: 165  from Xanathar's Guide To Everything"
     },
-    "speak with animals ritual": {
+    "speak with animals": {
         "level": 1,
         "school": "Divination",
         "time": "1 Action",
@@ -972,7 +972,7 @@
         "source": "Players Handbook",
         "descrpition": "A creature of your choice that you can see within range perceives everything as hilariously funny and falls into fits of laughter if this spell affects it.  The target must succeed on a Wisdom saving throw or fall prone, becoming incapacitated and unable to stand up for the duration.  A creature with an Intelligence score of 4 or less isn't affected.  \nAt the end of each of its turns, and each time it takes damage, the target can make another Wisdom saving throw.  The target has advantage on the saving throw if it's triggered by damage.  On a success, the spell ends."
     },
-    "tensers floating disk ritual": {
+    "tensers floating disk": {
         "level": 1,
         "school": "Conjuration",
         "time": "1 Action",
@@ -999,7 +999,7 @@
         "source": "Players Handbook",
         "description": "A wave of thunderous force sweeps out from you.\n  Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.\n  In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet. \n  When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st. \n  Page: 282  Players Handbook"
     },
-    "unseen servant ritual": {
+    "unseen servant": {
         "level": 1,
         "school": "Conjuration",
         "time": "1 Action",
@@ -1062,7 +1062,7 @@
         "source": "Players Handbook",
         "description": "You assume a different form.\n  When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.\n  Aquatic Adaptation. You adapt your body to an aquatic environment, sprouting gills, and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.\n  Change Appearance. You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also don't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.\n  Natural Weapons. You grow claws, fangs, spines,&nbsp;horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it. \n  Page: 211  Players Handbook"
     },
-    "animal messenger ritual": {
+    "animal messenger": {
         "level": 2,
         "school": "Enchantment",
         "time": "1 Action",
@@ -1080,7 +1080,7 @@
         "source": "Players Handbook",
         "description": "You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. \n  You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting knock on the object suppresses arcane lock for 10 minutes. \n  While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10. \n  Page: 215  Players Handbook"
     },
-    "augury ritual": {
+    "augury": {
         "level": 2,
         "school": "Divination",
         "time": "1 Minute",
@@ -1098,7 +1098,7 @@
         "source": "Players Handbook",
         "description": "You touch a willing creature. Until the spellends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing. \n  Page: 217  Players Handbook"
     },
-    "beast sense ritual": {
+    "beast sense": {
         "level": 2,
         "school": "Divination",
         "time": "1 Action",
@@ -1296,7 +1296,7 @@
         "source": "Players Handbook",
         "description": "A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. \n  Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.\n  As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn.\n  When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.&nbsp; \n  When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd. \n  Page: 242  Players Handbook"
     },
-    "gentle repose ritual": {
+    "gentle repose": {
         "level": 2,
         "school": "Necromancy",
         "time": "1 Action",
@@ -1377,7 +1377,7 @@
         "source": "Players Handbook",
         "description": "One creature or object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected.\n  The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target's altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell's range.\n  When the spell ends, the target floats gently to the ground if it is still aloft. \n  Page: 255  Players Handbook"
     },
-    "locate animals or plants ritual": {
+    "locate animals or plants": {
         "level": 2,
         "school": "Divination",
         "time": "1 Action",
@@ -1395,7 +1395,7 @@
         "source": "Players Handbook",
         "description": "Describe or name an object that is familiar to you. You sense the direction to the object's location, as long as that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement.\n  The spell can locate a specific object known to you, as long as you have seen it up close ' within 30 feet ' at least once. Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon.\n  This spell can't locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object. \n  Page: 256  Players Handbook"
     },
-    "magic mouth ritual": {
+    "magic mouth": {
         "level": 2,
         "school": "Illusion",
         "time": "1 Minute",
@@ -1575,7 +1575,7 @@
         "source": "Players Handbook",
         "description": "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.\n  A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area. \n  When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd. \n  Page: 275  Players Handbook"
     },
-    "silence ritual": {
+    "silence": {
         "level": 2,
         "school": "Illusion",
         "time": "1 Action",
@@ -1584,7 +1584,7 @@
         "source": "Players Handbook",
         "description": "For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there. \n  Page: 275  Players Handbook"
     },
-    "skywrite ritual": {
+    "skywrite": {
         "level": 2,
         "school": "Transmutation",
         "time": "1 Action",
@@ -1854,7 +1854,7 @@
         "source": "Players Handbook",
         "description": "You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or drop whatever it is holding and become frightened for the duration. \n  While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn't have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the spell ends for that creature. \n  Page: 239  Players Handbook"
     },
-    "feign death ritual": {
+    "feign death": {
         "level": 3,
         "school": "Necromancy",
         "time": "1 Action",
@@ -1935,7 +1935,7 @@
         "source": "Players Handbook",
         "description": "You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range.\n  The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0.\n  The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor. \n  Page: 252  Players Handbook"
     },
-    "leomunds tiny hut ritual": {
+    "leomunds tiny hut": {
         "level": 3,
         "school": "Evocation",
         "time": "1 Minute",
@@ -1998,7 +1998,7 @@
         "source": "Players Handbook",
         "description": "As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs. \n  When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd. \n  Page: 258  Players Handbook"
     },
-    "meld into stone ritual": {
+    "meld into stone": {
         "level": 3,
         "school": "Transmutation",
         "time": "1 Action",
@@ -2025,7 +2025,7 @@
         "source": "Players Handbook",
         "description": "For the duration, you hide a target that you touch from divination magic.\n  The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can't be targeted by any divination magic or perceived through magical scrying sensors. \n  Page: 263  Players Handbook"
     },
-    "phantom steed ritual": {
+    "phantom steed": {
         "level": 3,
         "school": "Illusion",
         "time": "1 Minute",
@@ -2205,7 +2205,7 @@
         "source": "Elemental Evil",
         "description": "(a drop of water)\n  You conjure up a wall of water on the ground at a point you can see within range. You can make the wall up to 30 feet long,\n10 feet high, and 1 foot thick, or you can make a ringed wall up to 20 feet in diameter,\n20 feet high, and 1 foot thick. The wall vanishes when the spell ends. The wall's space is difficult terrain.\n  Any ranged weapon attack that enters the wall's space has disadvantage on the attack roll, and fire damage\n  is halved if the fire effect passes through the wall to reach its target. Spells that deal cold damage that pass through the wall cause the area of the wall they pass through to freeze solid (at least a 5-foot square section is frozen). Each 5-foot-square frozen section has AC 5 and 15 hit points. Reducing a frozen section to 0 hit points destroys it. When a section is destroyed, the wall's water doesn't fill it. \n  Page: 23  from EE Players Companion"
     },
-    "water breathing ritual": {
+    "water breathing": {
         "level": 3,
         "school": "Transmutation",
         "time": "1 Action",
@@ -2214,7 +2214,7 @@
         "source": "Players Handbook",
         "description": "This spell grants up to ten willing creatures you can see within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration. \n  Page: 287  Players Handbook"
     },
-    "water walk ritual": {
+    "water walk": {
         "level": 3,
         "school": "Transmutation",
         "time": "1 Action",
@@ -2348,7 +2348,7 @@
         "concentration": "No",
         "source": "Players Handbook"
     },
-    "divination ritual": {
+    "divination": {
         "level": 4,
         "school": "Divination",
         "time": "1 Action",
@@ -2699,7 +2699,7 @@
         "source": "Players Handbook",
         "description": "You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind dispereses the fog, ending the spell. Its area is heavily obscured. \n  When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes 5d8 poison damageon a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don't need to breathe. \n  The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings.&nbsp; \n  When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th. \n  Page: 222  Players Handbook"
     },
-    "commune ritual": {
+    "commune": {
         "level": 5,
         "school": "Divination",
         "time": "1 Minute",
@@ -2708,7 +2708,7 @@
         "source": "Players Handbook",
         "description": "You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question. \n  Divine beings aren't necessarily omniscient, so you might receive 'unclear' as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the DM might offer a short phrase as an answer instead. \n  If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer. The DM makes this roll in secret. \n  Page: 223  Players Handbook"
     },
-    "commune with nature ritual": {
+    "commune with nature": {
         "level": 5,
         "school": "Divination",
         "time": "1 Minute",
@@ -2744,7 +2744,7 @@
         "source": "Players Handbook",
         "description": "You fire a piece of nonmagical ammunition from a ranged weapon or throw a nonmagical weapon into the air and choose a point within range. \n  Hundreds of duplicates of the ammunition or weapon fall in a volley from above and then disappear. Each creature in a 40-foot-radius. 20-foot-high cylinder centered on that point must make a Dexterity saving throw. A creature takes 8d8 damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the ammunition or weapon. \n  Page: 226  Players Handbook"
     },
-    "contact other plane ritual": {
+    "contact other plane": {
         "level": 5,
         "school": "Divination",
         "time": "1 Minute",
@@ -3014,7 +3014,7 @@
         "source": "Players Handbook",
         "description": "You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature's soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point.\n  This spell also neutralizes any poison and cures nonmagical diseases that affected the creature at the time it died. This spell doesn't, however, remove magical diseases, curses, or similar effects; if these aren't first removed prior to casting the spell, they take effect when the creature returns to life. The spell can't return an undead creature to life.\n  This spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival ' its head, for instance ' the spell automatically fails.\n  Coming back from the dead is an ordeal. The target takes a -4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears. \n  Page: 270  Players Handbook"
     },
-    "rarys telepathic bond ritual": {
+    "rarys telepathic bond": {
         "level": 5,
         "school": "Divination",
         "time": "1 Action",
@@ -3248,7 +3248,7 @@
         "source": "Players Handbook",
         "description": "A thin green ray springs from your pointing finger to a target that you can see within range. \n  The target can be a creature, an object, or a creation of magical force, such as the wall created by wall of force. \n  A creature targeted by this spell must make a Dexterity saving throw. On a failed save, the target takes 10d6 + 40 force damage. If this damage reduces the target to 0 hit points, it is disintegrated. \n  A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a true resurrection or a wish spell. \n  This spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this spell disintegrates a 10-foot-cube portion of it. A magic item is unaffected by this spell.&nbsp; \n  When you cast this spell using a spell slot of 7th level or higher, the damage increases by 3d6 for each slot level above 6th. \n  Page: 233  Players Handbook"
     },
-    "drawmijs instant summons ritual": {
+    "drawmijs instant summons": {
         "level": 6,
         "school": "Conjuration",
         "time": "1 Minute",
@@ -3293,7 +3293,7 @@
         "source": "Players Handbook",
         "description": "You attempt to turn one creature that you can see within range into stone.\n  If the targets body is made of flesh, the creature must make a Constitution saving throw. On a failed save, it is restrained as its flesh begins to harden. On a successful save, the creature isn't affected.\n  A creature restrained by this spell must make another Consititution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails saves three times, it is turned to stone and subjected to the petrified condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.\n  If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state. If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed. \n  Page: 243  Players Handbook"
     },
-    "forbiddance ritual": {
+    "forbiddance": {
         "level": 6,
         "school": "Abjuration",
         "time": "10 Minutes",
