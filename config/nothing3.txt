@@ -1,0 +1,224 @@
+https://www.dnd-spells.com/spell/ray-of-enfeeblement Components: <strong>V, S</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/stone-shape Components: <strong>V, S, M (soft clay, which must be worked into roughly the desired shape of the stone object)</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/sunburst Components: <strong>V, S, M (fire and a piece of sunstone)</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/misty-step Components: <strong>V</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/heal Components: <strong>V, S</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/conjure-volley Components: <strong>V, S, M  (one piece of ammunition or one thrown weapon)</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/animal-shapes Components: <strong>V, S</strong> <br />
+                Duration: <strong>Concentration, up to 24 hours</strong> <br />  
+https://www.dnd-spells.com/spell/color-spray Components: <strong>V, S, M</strong> <br />
+                Duration: <strong>1 round</strong> <br />  
+https://www.dnd-spells.com/spell/mending Components: <strong>V, S, M (two lodestones)</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/phantasmal-killer Components: <strong>V, S</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/swift-quiver Components: <strong>V, S, M (a quiver containing at least one piece of ammunition)</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/shocking-grasp Components: <strong>V, S </strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/protection-from-poison Components: <strong>V, S</strong> <br />
+                Duration: <strong>1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/hold-person Components: <strong>V, S, M (a small, straight piece of iron)</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/illusory-script-ritual Components: <strong>S, M (a lead-based ink worth at least 10 gp, which the spell consumes)</strong> <br />
+                Duration: <strong>10 days</strong> <br />  
+https://www.dnd-spells.com/spell/control-water Components: <strong>V,S,M  (a drop of water and a pinch of dust)</strong> <br />
+                Duration: <strong>Concentration, up to 10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/investiture-of-ice Components: <strong>V, S</strong> <br />
+                Duration: <strong>Concentration, up to 10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/booming-blade Components: <strong>V, M (a weapon) </strong> <br />
+                Duration: <strong>1 round</strong> <br />  
+https://www.dnd-spells.com/spell/find-traps Components: <strong>V, S</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/produce-flame Components: <strong>V, S</strong> <br />
+                Duration: <strong>10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/animal-friendship Components: <strong>V, S, M (a morsel of food) </strong> <br />
+                Duration: <strong>24 hours</strong> <br />  
+https://www.dnd-spells.com/spell/incendiary-cloud Components: <strong>V, S</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/mordenkainens-private-sanctum Components: <strong>V, S, M (a thin sheet of lead, a piece of opaque glass, a wad of cotton or cloth, and powdered chrysolite)</strong> <br />
+                Duration: <strong>24 hours</strong> <br />  
+https://www.dnd-spells.com/spell/demiplane Components: <strong>S</strong> <br />
+                Duration: <strong>1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/dominate-beast Components: <strong>V, S</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/web Components: <strong>V, S, M (a bit of spiderweb)</strong> <br />
+                Duration: <strong>Concentration, up to 1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/rarys-telepathic-bond-ritual Components: <strong>V, S, M (pieces of eggshell from two different kinds of creatures)</strong> <br />
+                Duration: <strong>1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/thorn-whip Components: <strong>V, S, M (the stem of a plant with thorns)</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/zone-of-truth Components: <strong>V, S</strong> <br />
+                Duration: <strong>10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/tongues Components: <strong>V, M (a small clay model of a ziggurat)</strong> <br />
+                Duration: <strong>1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/fire-shield Components: <strong>V, S, M (a bit of phosphorus or a firefly)</strong> <br />
+                Duration: <strong>10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/watery-sphere Components: <strong>V, S, M (a droplet of water)</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/eyebite Components: <strong>V, S</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/cordon-of-arrows Components: <strong>V, S, M (four or more arrows or bolts)</strong> <br />
+                Duration: <strong>8 hours</strong> <br />  
+https://www.dnd-spells.com/spell/evards-black-tentacles Components: <strong>V, S, M (a piece of tentacle from a giant octopus or a giant squid)</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/animal-messenger-ritual Components: <strong>V, S, M (a morsel of food)</strong> <br />
+                Duration: <strong>24 hours</strong> <br />  
+https://www.dnd-spells.com/spell/true-polymorph Components: <strong>V, S, M (a drop of mercury, a dollop of gum arabic, and a wisp of smoke)</strong> <br />
+                Duration: <strong>Concentration, up to 1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/branding-smite Components: <strong>V</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/gentle-repose-ritual Components: <strong>V, S, M (a pinch of salt and one copper piece placed on each of the corpse&rsquo;s eyes, which must remain there for the duration)</strong> <br />
+                Duration: <strong>10 days</strong> <br />  
+https://www.dnd-spells.com/spell/circle-of-death Components: <strong>V, S, M  (the powder of a crushed black pearl worth at least 500 gp)</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/temple-of-the-gods Components: <strong>V, S, M (a holy symbol worth at least 5 gp)</strong> <br />
+                Duration: <strong>24 hours</strong> <br />  
+https://www.dnd-spells.com/spell/conjure-barrage Components: <strong>V, S, M  (one piece of ammunition or a thrown weapon)</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/earthquake Components: <strong>V, S, M (a pinch o f dirt, a piece o f rock, and a lump of clay)</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/fog-cloud Components: <strong>V, S</strong> <br />
+                Duration: <strong>Concentration, up to 1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/awaken Components: <strong>V, S, M (an agate worth at least 1,000 gp, which the spell consumes)</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/faerie-fire Components: <strong>V</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/hold-monster Components: <strong>V, S, M (a small, straight piece of iron)</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/fear Components: <strong>V, S, M (a white feather or the heart of a hen)</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/regenerate Components: <strong>V, S, M (a prayer wheel and holy water)</strong> <br />
+                Duration: <strong>1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/speak-with-plants Components: <strong>V, S</strong> <br />
+                Duration: <strong>10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/tsunami Components: <strong>V, S</strong> <br />
+                Duration: <strong>Concentration, up to 6 rounds</strong> <br />  
+https://www.dnd-spells.com/spell/synaptic-static Components: <strong>V, S</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/vitriolic-sphere Components: <strong>V, S, M (a drop of giant slug bile)</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/commune-ritual Components: <strong>V, S, M (incense and a vial of holy or unholy water</strong> <br />
+                Duration: <strong>1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/teleportation-circle Components: <strong>V, M (rare chalks and inks infused with precious gems with 50 gp, which the spell consumes)</strong> <br />
+                Duration: <strong>1 round</strong> <br />  
+https://www.dnd-spells.com/spell/compulsion Components: <strong>V, S</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/summon-lesser-demons Components: <strong>V, S, M (a vial of blood from a humanoid killed within the past 24 hours)</strong> <br />
+                Duration: <strong>Concentration, up to 1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/druid-grove Components: <strong>V, S, M (mistletoe, which the spell consumes, that was harvested with a golden sickle under the light of a full moon)</strong> <br />
+                Duration: <strong>24 hours</strong> <br />  
+https://www.dnd-spells.com/spell/clairvoyance Components: <strong>V, S, M  (a focus worth at least 100 gp, either a jeweled horn for hearing or a glass eye for seeing</strong> <br />
+                Duration: <strong>Concentration, up to 10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/knock Components: <strong>V</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/warding-wind Components: <strong>V</strong> <br />
+                Duration: <strong>Concentration, up to 10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/lightning-lure Components: <strong>V</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/true-seeing Components: <strong>V, S, M (an ointment for the eyes that costs 25 gp; is made from mushroom powder, saffron, and fat; and is consumed by the spell)</strong> <br />
+                Duration: <strong>1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/aura-of-purity Components: <strong>V</strong> <br />
+                Duration: <strong>Concentration, up to 10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/fire-bolt Components: <strong>V, S</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/major-image Components: <strong>V, S, M (a bit of fleece)</strong> <br />
+                Duration: <strong>Concentration, up to 10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/commune-with-nature-ritual Components: <strong>V, S</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/prayer-of-healing Components: <strong>V</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/true-strike Components: <strong>S</strong> <br />
+                Duration: <strong>Concentration, up to 1 round</strong> <br />  
+https://www.dnd-spells.com/spell/tensers-floating-disk-ritual Components: <strong>V, S, M (a drop of mercury)</strong> <br />
+                Duration: <strong>1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/frostbite Components: <strong>V, S</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/control-weather Components: <strong>V, S, M</strong> <br />
+                Duration: <strong>Concentration, up to 8 hours</strong> <br />  
+https://www.dnd-spells.com/spell/shape-water Components: <strong>S</strong> <br />
+                Duration: <strong>Instantaneous or 1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/ice-knife Components: <strong>S, M</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/water-walk-ritual Components: <strong>V, S, M (a piece of cork)</strong> <br />
+                Duration: <strong>1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/protection-from-evil-and-good Components: <strong>V, S, M (holy water or powdered silver and iron, which the spell consumes)</strong> <br />
+                Duration: <strong>Concentration, up to 10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/wall-of-sand Components: <strong>V, S, M (a handful of sand) </strong> <br />
+                Duration: <strong>Concentration, up to 10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/storm-of-vengeance Components: <strong>V, S</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/move-earth Components: <strong>V, S, M (an iron blade and a small bag containing a mixture of soils&mdash;clay, loam, and sand)</strong> <br />
+                Duration: <strong>Concentration, up to 2 hours</strong> <br />  
+https://www.dnd-spells.com/spell/planar-ally Components: <strong>V, S</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/burning-hands Components: <strong>V, S</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/freedom-of-movement Components: <strong>V, S, M (a leather strap, bound around the arm or a similar appendage) </strong> <br />
+                Duration: <strong>1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/destructive-wave Components: <strong>V</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/toll-the-dead Components: <strong>V, S</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/word-of-recall Components: <strong>V</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/gust Components: <strong>V, S</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/calm-emotions Components: <strong>V, S</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/charm-person Components: <strong>V, S</strong> <br />
+                Duration: <strong>1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/soul-cage Components: <strong>V, S, M (a tiny silver cage worth 100 gp)</strong> <br />
+                Duration: <strong>8 hours</strong> <br />  
+https://www.dnd-spells.com/spell/augury-ritual Components: <strong>V, S, M (specially marked sticks, bones, or similar tokens worth at least 25 gp)</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/tashas-hideous-laughter Components: <strong>V, S, M (tiny tarts and a feather that is waved in the air)</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/holy-aura Components: <strong>V, S, M (a tiny reliquary worth at least 1,000 gp containing a sacred relic, such as a scrap of cloth from a saint&rsquo;s robe or a piece of parchment from a religious text)</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/mental-prison Components: <strong>S</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/tree-stride Components: <strong>V, S</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/counterspell Components: <strong>S</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/power-word-kill Components: <strong>V</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/speak-with-dead Components: <strong>V, S, M (burning incense)</strong> <br />
+                Duration: <strong>10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/mirage-arcane Components: <strong>V, S</strong> <br />
+                Duration: <strong>10 days</strong> <br />  
+https://www.dnd-spells.com/spell/dispel-magic Components: <strong>V, S</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/wish Components: <strong>V</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/sword-burst Components: <strong>V</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/message Components: <strong>V, S, M (a short piece of copper wire)</strong> <br />
+                Duration: <strong>1 round</strong> <br />  
+https://www.dnd-spells.com/spell/antimagic-field Components: <strong>V, S M (a pinch of powdered iron or iron filings)</strong> <br />
+                Duration: <strong>Concentration, up to 1 hour</strong> <br />  
+https://www.dnd-spells.com/spell/continual-flame Components: <strong>V, S, M  (ruby dust worth 50 gp, which the spell consumes)</strong> <br />
+                Duration: <strong>Until dispelled</strong> <br />  
+https://www.dnd-spells.com/spell/create-undead Components: <strong>V, S, M  (one clay pot filled with grave dirt, one clay pot filled with brackish water, and one 150 gp black onyx stone for each corpse)</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/divine-favor Components: <strong>V, S</strong> <br />
+                Duration: <strong>Concentration, up to 1 minute</strong> <br />  
+https://www.dnd-spells.com/spell/wall-of-force Components: <strong>V, S, M (a pinch of powder made by crushing a clear gemstone)</strong> <br />
+                Duration: <strong>Concentration, up to 10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/inflict-wounds Components: <strong>V, S</strong> <br />
+                Duration: <strong>Instantaneous</strong> <br />  
+https://www.dnd-spells.com/spell/hallow Components: <strong>V, S, M (herbs, oils, and incense worth at least 1,000 gp, which the spell consumes)</strong> <br />
+                Duration: <strong>Until dispelled</strong> <br />  
+https://www.dnd-spells.com/spell/flame-blade Components: <strong>V, S, M (leaf of sumac)</strong> <br />
+                Duration: <strong>Concentration, up to 10 minutes</strong> <br />  
+https://www.dnd-spells.com/spell/forbiddance-ritual Components: <strong>V, S, M (a sprinkling of holy water, rare incense, and powdered ruby worth at least 1,000 gp)</strong> <br />
+                Duration: <strong>1 day</strong> <br />  
+https://www.dnd-spells.com/spell/insect-plague Components: <strong>V, S, M (a few grains of sugar, some kernels of grain, and a smear of fat)</strong> <br />
+                Duration: <strong>Concentration, up to 10 minutes</strong> <br />  
