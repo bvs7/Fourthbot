@@ -15,7 +15,7 @@ async def roll(data,message):
             "**!roll 8d6** : roll 8 d6s \n"
             "**!roll 1d20 2d12 3d8**")
     if len(words) == 1:
-        await data.client.send_message(message.channel,msg)
+        await message.channel.send(msg)
     output = []
     for die in words[1:]:
         matchObj = re.match(r'(\d*)d(\d+)', die)
@@ -36,11 +36,11 @@ async def roll(data,message):
     for values in output:
         sum_rolls = sum_rolls + sum(values)
     msg = str(output) + ' : ' + str(sum_rolls)
-    await data.client.send_message(message.channel,msg)
+    await message.channel.send(msg)
 
 async def oof(data,message):
     msg = ("Big oof my dudes.")
-    await data.client.send_message(message.channel,msg)
+    await message.channel.send(msg)
 
 async def xp(data,message):
     words = message.content.split()
@@ -63,7 +63,7 @@ async def xp(data,message):
     msg = msg + '```'
     if msg == '``````':
         msg = 'No characters found, please check your spelling! :clap:'
-    await data.client.send_message(message.channel,msg)
+    await message.channel.send(msg)
 
 async def current(data,message):
     words = message.content.split()
@@ -103,7 +103,7 @@ async def current(data,message):
     else:
         msg = 'Your current character is\n```{:10}```\n'.format(current[author]) 
         msg = msg + 'To switch to a different character use **!current (character)**'
-    await data.client.send_message(message.channel,msg)
+    await message.channel.send(msg)
 
 async def bank(data,message):
     words = message.content.split()
@@ -152,7 +152,7 @@ async def bank(data,message):
         else: #Date,Author,Player,Character,Debits,Credits #Delta
             data.handler.append('Bank Tracker!A:G',[[str(datetime.date.today()),author,author,character,'0', spend,'-'+spend]])
             msg = "Confirmed! {} gained {} xp!".format(character,str(spend))
-    await data.client.send_message(message.channel,msg)
+    await message.channel.send(msg)
 
 
 async def session(data,message):
@@ -175,7 +175,7 @@ async def session(data,message):
                     msg = msg + "{:10}\n".format(current[player])
                 msg = msg+'```'
             data.handler.append('Session Tracker!A:E',session_data)
-    await data.client.send_message(message.channel,msg)
+    await message.channel.send(msg)
 
 async def bonus(data,message):
     words = message.content.split()
@@ -201,7 +201,7 @@ async def bonus(data,message):
             session_data = [[str(datetime.date.today()),author,player,"",str(number),"0",str(number)]]
             data.handler.append('Bank Tracker!A:G',session_data)
             msg = "{} awarded {} {} bonus xp.  Congrats!".format(author,player,str(number))
-    await data.client.send_message(message.channel,msg)
+    await message.channel.send(msg)
 
 async def spell(data,message):
     words = message.content.split()
@@ -223,7 +223,7 @@ async def spell(data,message):
     else:
         msg = "Spell not recognized"
     print(msg)
-    await data.client.send_message(message.channel,msg)
+    await message.channel.send(msg)
 
 
 

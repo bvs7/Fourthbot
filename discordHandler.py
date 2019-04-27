@@ -84,7 +84,8 @@ class discordHandler:
         msg = 'Hello {0.author.mention}'.format(message)
         print('Response: ', msg)
         print('Response: ', msg, file=self.log,flush=True)
-        await self.client.send_message(message.channel,msg)
+        print(discord.__version__)
+        await message.channel.send(msg)
     async def about(self,data,message):
         msg = ("I am FourthBot v1.2.  I act as the 4th DM for the group.  You can ask "
             "me lots of things or use me to roll dice through discord, or use me to "
@@ -92,7 +93,7 @@ class discordHandler:
             "finished yet though!  Use !help to see all of my current commands.")
         print('Response: About message')
         print('Response: About message',file=self.log,flush=True)
-        await self.client.send_message(message.channel,msg)
+        await message.channel.send(msg)
     async def help(self,data,message):
         words = message.content.split()
         if len(words)==1:
@@ -148,7 +149,7 @@ class discordHandler:
                         "to grant that player bonus xp.  The bonus xp will go straight to the bank.")
             elif words[1] == 'spell':
                 msg = ("Use **!spell (spell name)** to look up the description for a spell.  ")
-        await self.client.send_message(message.channel,msg)
+        await message.channel.send(msg)
 
 
 async def roll(data,message):
