@@ -1,21 +1,6 @@
-https://www.woolha.com/tutorials/node-js-using-google-sheets-api-with-oauth-2
-
 # Fourthbot
 Fourth DM in our DnD group
 
-First Steps:
-Create an init function that does all the stuff to connect to discord, sheets
-Create an input function that reads input from discord
-Create a parser for the data obtained from input
-Create a function the reads information from the sheet
-Create an output function that posts output to discord
+Going to be reprogramming this bot to take advantage of the discord.py bot/cog framework
 
-Create basic XP checker command: !xp
-
-Create a function that writes information to the sheet
-
-Add a session saver command: !session
-
-Add a bonus xp distribution command !bonus
-
-Add a item description command: !item 
+Also need to decide how to set up the docs
