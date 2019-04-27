@@ -535,3 +535,12 @@ FourthBot is now online!
 Command: spell :from Scarybone
 Command: spell :from Scarybone
 FourthBot is now online!
+FourthBot is now online!
+Command: session :from Scarybone
+Command: session :from Scarybone
+FourthBot is now online!
+Command: session :from Scarybone
+Command: current :from Scarybone
+Command: current :from Scarybone
+FourthBot is now online!
+Command: current :from Shadow Creature 22

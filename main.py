@@ -52,7 +52,7 @@ async def xp(data,message):
             specific_char.append(character.lower())
     # Figure out who sent the message
     author_id = message.author.id
-    author = data.users[author_id]
+    author = data.users[str(author_id)]
     raw_data = data.handler.read('Character Chart!A2:G13')
     msg = '```'
     for character in raw_data:
@@ -74,7 +74,7 @@ async def current(data,message):
         specific_flag = True
         specific_char = words[1]
     author_id = message.author.id
-    author = data.users[author_id]
+    author = data.users[str(author_id)]
     raw_data = data.handler.read('Character Chart!A:G')
     with open('config/current_characters.json','r') as current_file:
         current = json.load(current_file)
@@ -108,7 +108,7 @@ async def current(data,message):
 async def bank(data,message):
     words = message.content.split()
     author_id = message.author.id
-    author = data.users[author_id]
+    author = data.users[str(author_id)]
     if len(words) == 1: # Simple call
         raw_data = data.handler.read('Bank Chart!A:C')
         if not author in data.dms:
@@ -158,7 +158,7 @@ async def bank(data,message):
 async def session(data,message):
     words = message.content.split()
     author_id = message.author.id
-    author = data.users[author_id]
+    author = data.users[str(author_id)]
     if len(words) == 1: # Help call
         msg = """DMs can use this command in order to award session xp. Any awarded XP will show up in the #announcements tab"""
     else:
@@ -180,7 +180,7 @@ async def session(data,message):
 async def bonus(data,message):
     words = message.content.split()
     author_id = message.author.id
-    author = data.users[author_id]
+    author = data.users[str(author_id)]
     if author not in data.dms:
         msg = """Sorry kid.  You have to be running the game to use this command."""
     else:
