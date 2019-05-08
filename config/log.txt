@@ -544,3 +544,7 @@ Command: current :from Scarybone
 Command: current :from Scarybone
 FourthBot is now online!
 Command: current :from Shadow Creature 22
+FourthBot is now online!
+Command: hi :from Scarybone
+Response:  Hello <@!280721872608428032>
+Command: spell :from Scarybone
