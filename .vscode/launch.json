@@ -5,13 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Bot Main",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/new_main.py",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Python: Terminal (integrated)",
             "type": "python",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
         },
-
         {
             "type": "node",
             "request": "launch",
