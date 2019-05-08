@@ -1,4 +1,5 @@
-.vscode/launch.json
+.vscode/*
 Cogs/__pycache__/Basic.cpython-36.pyc
 Cogs/__pycache__/test.cpython-36.pyc
 __pycache__/test.cpython-36.pyc
+runtime.log
