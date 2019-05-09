@@ -59,11 +59,28 @@ class Basic(commands.Cog):
     
     @commands.command(help="Roll Dice")
     async def roll(self, ctx):
-        """ We will use regular expression matching for dice rolling:
-        Addends are parts that can be added (or even subtracted):
-        5d6, 14, d4, d100
-        to match an int, use [0-9]+
-        to match a dice roll, [1-9][0-9]*[dD][1-9][0-9]*
-        in between rolls can be a + """
-        #fullmatch = re.compile("(-?([0-9]+|[1-9][0-9]*[dD][1-9][0-9]*)([\+\-]([0-9]+|[1-9][0-9]*[dD][1-9][0-9]*))*")
-        await ctx.send("Not implemented yet hold horses plox")
+        words = ctx.message.content.split()
+        if len(words) == 1:
+            msg = ("Roll dice how you would see the dice written\n"
+                    "Examples: **!roll d20** : roll 1 d20\n"
+                    "**!roll 8d6** : roll 8 d6s \n"
+                    "**!roll 1d20 2d12 3d8**")
+            await ctx.send(msg)
+        output = []
+        for die in words[1:]:
+            matchObj = re.match(r'(\d*)d(\d+)', die)
+            if matchObj == None: continue
+            if matchObj.group(1) == '':
+                quantity = 1
+            else:
+                quantity = int(matchObj.group(1))
+            if quantity > 100: quantity = 100
+            die_size = int(matchObj.group(2))
+            if die_size < 2: die_size = 2
+            if die_size > 100: die_size = 100
+            rolls = []
+            for i in range(quantity):
+                rolls.append(random.randint(1,die_size))
+            output.append(rolls)
+    
+        await ctx.send(str(output))
