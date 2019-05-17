@@ -14,7 +14,9 @@ import os, sys, getopt
 
 ## Magic Variables
 COMMAND_PREFIX = '!'
-DISCORD_TOKEN  = 'NDM4Mjg4NjYxMzk4NjgzNjUw.DcCb5A.gyiEoXkZyEnnByhjOXshRriRHXY'
+DISCORD_TOKEN  = 'NTYyNDczNjY4MzYyNTAyMTc2.XKLSrQ.GEx6BUwS5Zch6ibN3AlSqvJUqno'
+DISCORD_TOKEN_PARTY  = 'NDM4Mjg4NjYxMzk4NjgzNjUw.DcCb5A.gyiEoXkZyEnnByhjOXshRriRHXY'
+
 LOG_LEVEL    = logging.INFO
 
 bot = commands.Bot(command_prefix=COMMAND_PREFIX)
@@ -26,10 +28,12 @@ async def on_ready(): # Function that runs when bot first logs on
     print("Logged in as\n{0}\n{1}".format(bot.user.name,bot.user.id))
     # Load in all Cogs
     for file in os.listdir("Cogs"):
-        logging.debug("Loading {}".format(file))
-        file_name = file[:-3]
-        cog_name = ".".join("Cogs",file_name)
-        bot.load_extension(cog_name)
+        if file[-3:] == ".py":
+            logging.debug("Loading {}".format(file))
+            print("Loading {}".format(file))
+            file_name = file[:-3]
+            cog_name = ".".join(["Cogs",file_name])
+            bot.load_extension(cog_name)
 
 @bot.event
 async def on_command(ctx): # Function that runs when the bot recognizes a command being sent

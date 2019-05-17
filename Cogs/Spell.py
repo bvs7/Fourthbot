@@ -9,16 +9,18 @@
 #############
 
 ## Magic Variables
-SPELL_LOCATION = 'config/spell3.json'
+SPELL_LOCATION = 'config/spells3.json'
 
 import discord
 from discord.ext import commands
 
 import json
 import difflib
+import logging
+import string
 
 def setup(bot):
-    bot.add_cog(Basic(bot))
+    bot.add_cog(Spell(bot))
 
 class Spell(commands.Cog):
     def __init__(self,bot):
@@ -41,16 +43,16 @@ class Spell(commands.Cog):
             if not possible_matches:
                 msg = ("Not sure what spell you were asking for.  Check your spelling!")
             else:
-                msg = ("The spell you listed doesn't match any spells.  Did you mean:\n"
-                       "\n".join(possible_matches))
+                msg = "The spell you listed doesn't match any spells.  Did you mean:\n"
+                msg = msg + "\n".join(possible_matches)
             await ctx.send(msg)
-        logging.debug("Recognized spell command for spell {}".format(spell_name)
+        logging.debug("Recognized spell command for spell {}".format(spell_name))
         with open(SPELL_LOCATION) as spell_file:
             spell_data = json.load(spell_file)[spell_name]
-        msg = ("```{0}\n  Level: {1['level']}\n  School: {1['school']}\n  Casting Time: {1['time']}\n"
-               "  Components: {1['components']}\n  Duration: {1['duration']}\n"
-               "  Ritual: {1['ritual']} | Concentration: {1['concentration']}\n  Source: {1['source'}\n"
-               "    {1['description']```").format(spell_name, spell_data)
+        msg = ("```\n{0}\n  Level: {1[level]}\n  School: {1[school]}\n  Casting Time: {1[time]}\n"
+               "  Components: {1[components]}\n  Duration: {1[duration]}\n"
+               "  Ritual: {1[ritual]} | Concentration: {1[concentration]}\n  Source: {1[source]}\n"
+               "    {1[description]}```").format(spell_name, spell_data)
         await ctx.send(msg)        
         
             
