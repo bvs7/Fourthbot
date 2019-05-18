@@ -54,77 +54,70 @@ class XP(commands.Cog):
             self.users = json.load(users_file)
     
     @commands.command(help="Use this command to check the xp of your characters")
-    async def xp(self, ctx):
-        ## Words is a list of words in the command
-        words = ctx.message.content.split()
-        specific_flag = False
-        specific_char = []
-        if len(words) >= 2:
-            # If command references specific characters, remember them
-            specific_flag = True
-            for character in words[1:]:
-                specific_char.append(character.lower())
-        # Get author
-        author_id = ctx.message.author.id
-        author    = self.users[str(author_id)]
-        roles     = list(role.name for role in ctx.message.author.roles)
-        # Get google raw_data
+    async def xp(self, ctx, *args):
+        ## Get important variables
+        args = [x.lower() for x in args]
+        author    = self.users[str(ctx.message.author.id)]
+        is_dm     = 'DM' in (role.name for role in ctx.message.author.roles)
         raw_data = self.handler.read(XP_LOCATION)
-        # Start output
         msg = '```'
-        for character in raw_data:
-            if author == character[0] or 'DM' in roles:
-                if not specific_flag or character[1].lower() in specific_char:
-                    msg = msg + '{:10}{:5} XP Level {:3}({:5} XP to next level)\n'.format(character[1],
-                                                character[4],character[5],character[6])
+        if not args: # No arg call show all chars user can possibly see
+            for character in raw_data:
+                if author == character[0] or is_dm:
+                    msg = msg + '{:10}{:5} XP Level {:3}({:5} XP to next level)\n'.format(
+                          character[1],character[4],character[5],character[6])
+        if args: # call for if there are args
+            for character in raw_data:
+                if (author == character[0] or is_dm) and character[1].lower() in args:
+                    msg = msg + '{:10}{:5} XP Level {:3}({:5} XP to next level)\n'.format(
+                          character[1],character[4],character[5],character[6])
         msg = msg + '```'
         if msg == '``````':
             msg = 'No characters found, please check your spelling! :clap:'
         await ctx.send(msg)
 
     @commands.command(help="Check or change your current character")
-    async def current(self,ctx):
-        words = ctx.message.content.split()
-        ## Specific flag for if a specific character is chosen
-        specific_flag = False
-        if len(words) >= 2:
-            specific_flag = True
-            specific_char = words[1]
-        author_id = ctx.message.author.id
-        author    = self.users[str(author_id)]
-        roles     = list(role.name for role in ctx.message.author.roles)
+    async def current(self,ctx, *args):
+        ## Get important variables
+        args = [x.capitalize() for x in args]
+        author    = self.users[str(ctx.message.author.id)]
+        is_dm     = 'DM' in (role.name for role in ctx.message.author.roles)
         raw_data = self.handler.read(XP_LOCATION)
         with open(JSON_CURRENT,'r') as current_file:
             current = json.load(current_file)
         msg = ''
-        if specific_flag == True:
+        if args and is_dm:
+            for arg in args:
+                if arg in current:
+                    msg = msg + '{}\'s current character is **{}**\n'.format(arg, current[arg])
+            if not msg:
+                msg = 'I did not recognize any names.'
+        elif args and not is_dm:
+            if len(args) > 1:
+                msg = 'You can only have one current character.  Please only use one name'
+            arg = args[0]
             for character in raw_data:
-                if author == character[0] and specific_char == character[1]:
-                    current[author] = specific_char
-                    msg =       'I set your current character as \n'
-                    msg = msg + '```{:10}{:5} XP Level {:3}({:5} XP to next level)```'.format(
-                        character[1],character[4],character[5],character[6])
-                    with open(JSON_CURRENT,'w') as current_file:
-                        json.dump(current, current_file)
-                if msg == '':
-                    msg = 'I didn\'t recognize the character you listed.  Here are your current characters:\n```'
-                    for character in raw_data:
-                        if author == character[0]:
-                            msg = msg + '{:10}'.format(character[1])
-                    msg = msg + '```\nUse **!current (character)** to switch characters.'
-                    msg = msg + 'Be sure to use proper capitalization.'
-        elif 'DM' in roles:
-            msg = msg + 'Current Character:\n```'
+                if arg != character[1]:
+                    continue
+                if author != character[0]:
+                    msg = 'You do not own that character!'
+                    break
+                msg = 'I set your current character as \n'
+                msg = msg + '```{:10}{:5} XP Level {:3}({:5} XP to next level)```'.format(
+                    character[1],character[4],character[5],character[6])
+                break
+        elif not args and is_dm:
+            msg = msg + 'Current Characters:\n```'
             for player in current:
                 msg = msg + '{:10}:{:10}\n'.format(player,current[player])
             msg = msg + '```'
-        else:
+        elif not args and not is_dm:
             msg = 'Your current character is\n```{:10}```\n'.format(current[author])
             msg = msg + 'To switch to a different character use **!current (character)**'    
         await ctx.send(msg)
 
     @commands.command(help="Check your xp bank balance or spend it on characters")
-    async def bank(self, ctx):
+    async def bank(self, ctx, *args):
         words = ctx.message.content.split()
         author_id = ctx.message.author.id
         author    = self.users[str(author_id)]

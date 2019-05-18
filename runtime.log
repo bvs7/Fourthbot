@@ -2946,3 +2946,282 @@ INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapi
 INFO:root:Received |current| command from |Scarybone|
 INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Bank%20Chart%21A%3AB?alt=json
 INFO:root:Received |bank| command from |Scarybone|
+WARNING:discord.gateway:Shard ID None has stopped responding to the gateway. Closing and restarting.
+INFO:discord.gateway:Websocket closed with 1006 (), attempting a reconnect.
+INFO:discord.client:Got a request to RESUME the websocket.
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the RESUME payload.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e7e6f8dd617377c6c54ca2205b107628 under trace gateway-prd-main-f7md, discord-sessions-prd-1-24.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: gateway-prd-main-74l8, discord-sessions-prd-1-16 (Session ID: 160353b426097db2cece570f84820618).
+INFO:root:Logging in as:Party-Bot : 438288661398683650
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: gateway-prd-main-1kbg, discord-sessions-prd-1-4 (Session ID: f9e890549c2d6f3f03bdbf7e8a48770e).
+INFO:root:Logging in as:Party-Bot : 438288661398683650
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest
+INFO:root:Received |xp| command from |Scarybone|
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: gateway-prd-main-z34d, discord-sessions-prd-1-14 (Session ID: f60809a46b11708a5fdf8eb2c145df70).
+INFO:root:Logging in as:Party-Bot : 438288661398683650
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |xp| command from |Scarybone|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |xp| command from |Scarybone|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |xp| command from |Scarybone|
+WARNING:discord.gateway:Shard ID None has stopped responding to the gateway. Closing and restarting.
+INFO:discord.gateway:Websocket closed with 1006 (), attempting a reconnect.
+INFO:discord.client:Got a request to RESUME the websocket.
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the RESUME payload.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f60809a46b11708a5fdf8eb2c145df70 under trace gateway-prd-main-p4h1, discord-sessions-prd-1-14.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: gateway-prd-main-h92n, discord-sessions-prd-1-25 (Session ID: 4a0272c8755bd1701d79ca157238cd40).
+INFO:root:Logging in as:Party-Bot : 438288661398683650
+WARNING:discord.gateway:Unknown event PRESENCES_REPLACE.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: gateway-prd-main-7ns0, discord-sessions-prd-1-19 (Session ID: 4aedd3e36154c1cd4ef5b7c6fa9369de).
+INFO:root:Logging in as:Party-Bot : 438288661398683650
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Scarybone|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Scarybone|
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: gateway-prd-main-0bxk, discord-sessions-prd-1-24 (Session ID: 204999ba0313889e423d0144d8a7a4c2).
+INFO:root:Logging in as:Party-Bot : 438288661398683650
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Scarybone|
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: gateway-prd-main-4v5l, discord-sessions-prd-1-29 (Session ID: e40f96b0876f9573a208f289ea755358).
+INFO:root:Logging in as:Party-Bot : 438288661398683650
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Scarybone|
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: gateway-prd-main-p4h1, discord-sessions-prd-1-11 (Session ID: d7262fe1ee01805425a073775d45a6cd).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: gateway-prd-main-q0cf, discord-sessions-prd-1-3 (Session ID: 9862b397e690471047bde21c716fb7ac).
+INFO:root:Logging in as:Party-Bot : 438288661398683650
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Scarybone|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Scarybone|
