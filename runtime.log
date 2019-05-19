@@ -3225,3 +3225,159 @@ INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapi
 INFO:root:Received |current| command from |Scarybone|
 INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
 INFO:root:Received |current| command from |Scarybone|
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: gateway-prd-main-354f, discord-sessions-prd-1-21 (Session ID: bc79a3518cee2c4755700284adb69f56).
+INFO:root:Logging in as:Party-Bot : 438288661398683650
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Shadow Creature 22|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Shadow Creature 22|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Shadow Creature 22|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Shadow Creature 22|
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: gateway-prd-main-xxwd, discord-sessions-prd-1-4 (Session ID: aa6c29607fb8c39cb0bfc4325a454589).
+INFO:root:Logging in as:Party-Bot : 438288661398683650
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: gateway-prd-main-4zwg, discord-sessions-prd-1-24 (Session ID: e81081b72302be8acaddc45a6cdde474).
+INFO:root:Logging in as:Party-Bot : 438288661398683650
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |xp| command from |Scarybone|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Scarybone|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Scarybone|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Scarybone|
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+INFO:discord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:discord.gateway:Shard ID None has connected to Gateway: gateway-prd-main-7fmj, discord-sessions-prd-1-16 (Session ID: c38583fa5c08899ae25ef92a99cf8343).
+INFO:root:Logging in as:Party-Bot : 438288661398683650
+WARNING:googleapiclient.discovery_cache:file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\scary\AppData\Local\Programs\Python\Python36\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+INFO:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Scarybone|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Bank%20Chart%21A%3AB?alt=json
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |bank| command from |Scarybone|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Shadow Creature 22|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Shadow Creature 22|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Shadow Creature 22|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Shadow Creature 22|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Bank%20Chart%21A%3AB?alt=json
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |bank| command from |Shadow Creature 22|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Bank%20Chart%21A%3AB?alt=json
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:googleapiclient.discovery:URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Bank%20Tracker%21A%3AG:append?valueInputOption=USER_ENTERED&alt=json
+INFO:root:Received |bank| command from |Shadow Creature 22|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |current| command from |Shadow Creature 22|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |xp| command from |Shadow Creature 22|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Bank%20Chart%21A%3AB?alt=json
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |bank| command from |Shadow Creature 22|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Bank%20Chart%21A%3AB?alt=json
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |bank| command from |Shadow Creature 22|
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Bank%20Chart%21A%3AB?alt=json
+INFO:googleapiclient.discovery:URL being requested: GET https://sheets.googleapis.com/v4/spreadsheets/1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo/values/Character%20Chart%21A2%3AG13?alt=json
+INFO:root:Received |bank| command from |Shadow Creature 22|

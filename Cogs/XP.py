@@ -79,22 +79,30 @@ class XP(commands.Cog):
     @commands.command(help="Check or change your current character")
     async def current(self,ctx, *args):
         ## Get important variables
-        args = [x.capitalize() for x in args]
         author    = self.users[str(ctx.message.author.id)]
         is_dm     = 'DM' in (role.name for role in ctx.message.author.roles)
-        raw_data = self.handler.read(XP_LOCATION)
+        raw_data  = self.handler.read(XP_LOCATION)
         with open(JSON_CURRENT,'r') as current_file:
             current = json.load(current_file)
         msg = ''
-        if args and is_dm:
+        if args and is_dm: #DM changes player's character and/or checks currents
             for arg in args:
-                if arg in current:
-                    msg = msg + '{}\'s current character is **{}**\n'.format(arg, current[arg])
+                if arg.capitalize() in current:
+                    msg = msg + '{}\'s current character is **{}**\n'.format(arg.capitalize(), current[arg.capitalize()])
+                for character in raw_data:
+                    if arg.lower() == character[1]:
+                        current[character[0]] == character[1]
+                        with open(JSON_CURRENT, 'w') as current_file:
+                            json.dump(current,current_file)
+                        msg = msg + '{0[0]}\'s current character has been set to **{0[1]}**\n'.format(character)
+                        break
             if not msg:
                 msg = 'I did not recognize any names.'
-        elif args and not is_dm:
+        elif args and not is_dm: #Player changes his or her character
             if len(args) > 1:
                 msg = 'You can only have one current character.  Please only use one name'
+                await ctx.send(msg)
+                return
             arg = args[0]
             for character in raw_data:
                 if arg != character[1]:
@@ -102,66 +110,81 @@ class XP(commands.Cog):
                 if author != character[0]:
                     msg = 'You do not own that character!'
                     break
+                current[character[0]] == character[1]
+                with open(JSON_CURRENT, 'w') as current_file:
+                    json.dump(current,current_file)
                 msg = 'I set your current character as \n'
                 msg = msg + '```{:10}{:5} XP Level {:3}({:5} XP to next level)```'.format(
                     character[1],character[4],character[5],character[6])
                 break
-        elif not args and is_dm:
+        elif not args and is_dm: #DM checks all current chars
             msg = msg + 'Current Characters:\n```'
             for player in current:
                 msg = msg + '{:10}:{:10}\n'.format(player,current[player])
             msg = msg + '```'
-        elif not args and not is_dm:
-            msg = 'Your current character is\n```{:10}```\n'.format(current[author])
+        elif not args and not is_dm: #Player checks their current char
+            msg = 'Your current character is **{:10}**\n'.format(current[author])
             msg = msg + 'To switch to a different character use **!current (character)**'    
         await ctx.send(msg)
 
     @commands.command(help="Check your xp bank balance or spend it on characters")
     async def bank(self, ctx, *args):
-        words = ctx.message.content.split()
-        author_id = ctx.message.author.id
-        author    = self.users[str(author_id)]
-        roles     = list(role.name for role in ctx.message.author.roles)
-        if len(words) == 1: # Simple bank check call
-            raw_data = self.handler.read(BANK_LOCATION)
-            if not 'DM' in roles:
-                for player in raw_data:
-                    if player[0] == author:
-                        msg = 'You currently have **{}** banked xp\n'.format(str(player[1]))
-                        msg = msg + 'To spend xp use **!bank (character) (amount) confirm**'
-            else:
-                msg = 'Players\' banked xp:\n```'
-                for player in raw_data:
-                    msg = msg + '{:8}:{:4}\n'.format(player[0],str(player[1]))
-                msg = msg + '```'
-        else: # call to change values
-            character_flag = False
-            spend_flag = False
-            confirm_flag = False
-            raw_data = self.handler.read(BANK_LOCATION)
-            characters = set() ### Creating list of potential characters
+        author    = self.users[str(ctx.message.author.id)]
+        is_dm     = 'DM' in (role.name for role in ctx.message.author.roles)
+        raw_data = self.handler.read(BANK_LOCATION)
+        char_data = self.handler.read(XP_LOCATION)
+        if not args and is_dm: #DM checks all banked xp
+            msg = 'Players\' banked xp:\n```'
+            for player in raw_data:
+                msg = msg + '{:8}:{:4}\n'.format(player[0],str(player[1]))
+            msg = msg + '```'
+            await ctx.send(msg)
+        elif not args and not is_dm: # Player checks their xps
+            for player in raw_data:
+                if player[0] == author:
+                    msg = 'You currently have **{}** banked xp\n'.format(str(player[1]))
+                    msg = msg + 'To spend xp use **!bank (character) (amount) confirm**'
+                    break
+            await ctx.send(msg)
+        elif args and not is_dm: #Player spends xp
+            confirm_flag, value_flag, character_flag = False, False, False
             for player in raw_data:
                 if author == player[0]:
-                    max_spend = int(player[1])
-            for word in words[1:]:
-                if word in characters and not character_flag:
-                    character = word
-                    character_flag = True
-                if word.isdigit() and int(word) <= max_spend and not spend_flag:
-                    spend = word
-                    spend_flag = True
-                if word == 'Confirm' or word == 'corfirm':
+                    max_value = int(player[1])
+            characters = set()
+            for character in char_data:
+                characters.add(character[1])
+            for arg in args:
+                if arg == 'confirm' or arg == 'Confirm':
                     confirm_flag = True
-            if not character_flag:
-                msg = "I didn't recognize which character you want to spend on.  Use !xp if you forget your character names."
-            elif not spend_flag:
-                msg = "I didn't recognize a number of points to spend.  Don't use anything but numbers for that."
-            elif not confirm_flag:
-                msg = "Enter the same command, with \"Confirm\" after it in order to confirm your spending"
-            else: #Date, Author, Player, Character, Debits, Credits, Delta
-                self.handler.append(BANK_TRACKER,[[str(datetime.date.today()),author,author, character, '0', spend, '-'+spend]])
-                msg = "Confirmed! {} gained {} xp!".format(character, str(spend))
-        await ctx.send(msg)
+                    continue
+                elif arg.isdigit() and not value_flag:
+                    value = int(arg)
+                    if max_value < value:
+                        msg = "Error:  You do not have that many points to spend!"
+                        await ctx.send(msg)
+                        return
+                    value_flag = True
+                    continue
+                elif arg in characters:
+                    character = arg
+                    character_flag = True
+            if not (character_flag and value_flag and confirm_flag): # Oops section
+                msg = 'The following problems occurred\n'
+                if not character_flag:
+                    msg = msg + 'You did not name a character, or I did not recognize the name\n'
+                if not value_flag:
+                    msg = msg + 'You did not enter a valid value\n'
+                if not confirm_flag:
+                    msg = msg + 'You must say **confirm** with the command for it to work.\n'
+                msg = msg + 'Proper use of the command is **!bank (character) (value) confirm**'
+                await ctx.send(msg)
+                return
+            self.handler.append(BANK_TRACKER,[[str(datetime.date.today()),author,author, character, '0', str(value), '-'+str(value)]])
+            msg = "Confirmed! {} gained {} xp!".format(character, value)
+            await ctx.send(msg)
+        elif args and is_dm: # Dm spends player xp?
+            await ctx.send("Not implemented")
 
     @commands.command(help="DMs ONLY: grant session XP")
     async def session(self,ctx):
