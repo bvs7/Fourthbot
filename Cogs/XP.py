@@ -183,57 +183,64 @@ class XP(commands.Cog):
             self.handler.append(BANK_TRACKER,[[str(datetime.date.today()),author,author, character, '0', str(value), '-'+str(value)]])
             msg = "Confirmed! {} gained {} xp!".format(character, value)
             await ctx.send(msg)
-        elif args and is_dm: # Dm spends player xp?
-            await ctx.send("Not implemented")
+        elif args and is_dm: # Dm checks specific player's bank values
+            msg = 'Players\' banked xp:\n```'
+            for player in raw_data:
+                if player[0] in args:
+                    msg = msg + '{:8}:{:4}\n'.format(player[0],str(player[1]))
+            msg = msg + '```'
+            await ctx.send(msg)
 
     @commands.command(help="DMs ONLY: grant session XP")
-    async def session(self,ctx):
-        words = ctx.message.content.split()
-        author_id = ctx.message.author.id
-        author    = self.users[str(author_id)]
-        roles     = list(role.name for role in ctx.message.author.roles)
-        if len(words) == 1: # Help call
+    async def session(self,ctx, *args):
+        author    = self.users[str(ctx.message.author.id)]
+        is_dm     = 'DM' in (role.name for role in ctx.message.author.roles)
+        if not is_dm: #Only DMs can use this command
             msg = "DMs can use this command in order to award session xp.  Any awarded XP will show up in the #announcements thread"
-        else:
-            if not 'DM' in roles:
-                msg = "Sorry kid.  You have to be running the game to use this command."
-            else:
-                session_data = []
-                points = words[1]
-                msg = "The following characters have been awarded {} xp for a session\n```".format(points)
-                with open(JSON_CURRENT,'r') as current_file:
-                    current = json.load(current_file)
-                    for player in current:
-                        session_data.append([str(datetime.date.today()),author,player,current[player],points])
-                        msg = msg + "{:10}\n".format(current[player])
-                    msg = msg + "```"
-                self.handler.append(SESSION_TRACKER, session_data)
+        elif not args: #Command doesn't work without arguments
+            msg = "Use **!session (value)** to assign points for a session to current characters
+        elif args: #Actual command
+            session_data = []
+            points = int(args[0])
+            msg = "The following characters have been awarded {} xp for a session\n```".format(points)
+            with open(JSON_CURRENT,'r') as current_file:
+                current = json.load(current_file)
+                for player in current:
+                    session_data.append([str(datetime.date.today()),author,player,current[player],points])
+                    msg = msg + "{:10}\n".format(current[player])
+                msg = msg + "```"
+            self.handler.append(SESSION_TRACKER, session_data)
         await ctx.send(msg)
 
     @commands.command(help="DMs ONLY: grant bonus XP")
-    async def bonus(self, ctx):
-        words = ctx.message.content.split()
-        author_id = ctx.message.author.id
-        author    = self.users[str(author_id)]
-        roles     = list(role.name for role in ctx.message.author.roles)
-        if 'DM' in roles:
+    async def bonus(self, ctx, *args):
+        author    = self.users[str(ctx.message.author.id)]
+        is_dm     = 'DM' in (role.name for role in ctx.message.author.roles)
+        if not is_dm:
             msg = "Sorry kid.  You have to be running the game to use this command."
-        else:
-            player_flag = False
-            number_flag = False
+        elif not args:
+            msg = "Use **!bonus (player) (value)** to give a player bonus xp, or **!bonus (value)** in a player's chat."
+        elif args:
             with open(JSON_CHATS,'r') as cc_file:
                 chats = json.load(cc_file)
-                if str(ctx.message.channel.id) in chats:
+            with open(JSON_CURRENT,'r') as current_file:
+                current = json.load(current_file)
+            player_flag, value_flag = False, False
+            if str(ctx.message.channel.id) in chats:
+                player = chats[str(ctx.message.channel.id)]
+                player_flag = True
+            for arg in args:
+                if arg.isdigit() and not value_flag:
+                    value = int(arg)
+                    value_flag = True
+                elif arg in current:
+                    player = arg
                     player_flag = True
-                    player = chats[str(ctx.message.channel.id)]
-                if words[1].isdigit():
-                    number_flag = True
-                    number = int(words[1])
-            
-            if not player_flag or not number_flag:
-                msg = "No xp awarded because message did not parse correctly."
+            if not player_flag or not value_flag:
+                msg = "No xp awarded because message did not parse correctly"
             else:
-                session_data = [[str(datetime.date.today()),author, player, "",str(number),"0",str(number)]]
+                session_data = [[str(datetime.date.today()),author, player, "", str(value), "0", str(value)]]
                 self.handler.append(BANK_TRACKER, session_data)
-                msg = "{} awarded {} {} bonus xp.  Congrats!".format(author,player,str(number))
+                msg = "{} awarded {} {} bonus xp.  Congrats!".format(author,player,str(value))
         await ctx.send(msg)
+
