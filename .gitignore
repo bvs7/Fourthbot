@@ -5,3 +5,4 @@ config/discord.json
 Cogs/__pycache__/*
 __pycache__/*
 runtime.log
+config/discord.json
