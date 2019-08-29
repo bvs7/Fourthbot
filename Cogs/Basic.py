@@ -94,3 +94,9 @@ class Basic(commands.Cog):
             output.append(rolls)
     
         await ctx.send(str(output))
+
+    @commands.command(help="Tell Fourthbot your discord ID number so we can track it.")
+    async def gattaca(self, ctx):
+        print(ctx.message.author.id)
+        print(ctx.message.channel.id)
+        await ctx.send("Thank you!")

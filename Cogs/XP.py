@@ -26,7 +26,7 @@ DM_LIST         = ['Chris','Brian','Tommy']
 
 # Google
 GOOGLE_HANDLE   = '1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo'
-XP_LOCATION     = 'Character Chart!A2:G13'
+XP_LOCATION     = 'Character Chart!A2:G14'
 BANK_LOCATION   = 'Bank Chart!A:B'
 BANK_TRACKER    = 'Bank Tracker!A:G'
 SESSION_TRACKER = 'Session Tracker!A:E'
