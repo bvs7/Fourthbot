@@ -92,6 +92,7 @@ class Basic(commands.Cog):
             for i in range(quantity):
                 rolls.append(random.randint(1,die_size))
             output.append(rolls)
+            output.append(sum(output))
     
         await ctx.send(str(output))
 
