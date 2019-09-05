@@ -5,8 +5,5 @@ config/discord.json
 Cogs/__pycache__/*
 __pycache__/*
 runtime.log
-<<<<<<< HEAD
 new_main.py
-=======
 config/discord.json
->>>>>>> 92109bad3605ed233534b7757dffd3323d5b6cab
