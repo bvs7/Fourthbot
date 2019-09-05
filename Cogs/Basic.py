@@ -46,7 +46,7 @@ class Basic(commands.Cog):
     #TODO: Find a better way to update the about command
     @commands.command(help="About this bot")
     async def about(self, ctx):
-        msg = ("I am FourthBot v2.0.  I act as the 4th DM for the group.  You can ask "
+        msg = ("I am FourthBot v2.1.  I act as the 4th DM for the group.  You can ask "
             "me lots of things or use me to roll dice through discord, or use me to "
             "keep track of your characters, experience, spells, and treasure.  I am not "
             "finished yet though!  Use !help to see all of my current commands.")
@@ -76,6 +76,8 @@ class Basic(commands.Cog):
                     "**!roll 8d6** : roll 8 d6s \n"
                     "**!roll 1d20 2d12 3d8**")
             await ctx.send(msg)
+        if len(words) == 2 and words[2] == 'character':
+            words = ['!roll', '4d6' '4d6' '4d6' '4d6' '4d6' '4d6']
         output = []
         for die in words[1:]:
             matchObj = re.match(r'(\d*)d(\d+)', die)
@@ -92,6 +94,7 @@ class Basic(commands.Cog):
             for i in range(quantity):
                 rolls.append(random.randint(1,die_size))
             output.append(rolls)
+            output.append(sum(output))
     
         await ctx.send(str(output))
 
