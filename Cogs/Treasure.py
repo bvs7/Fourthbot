@@ -5,7 +5,7 @@
 ## For treasure based commands
 #############
 ## Command List
-## 
+## !treasure view magic items
 #############
 
 import discord
@@ -23,7 +23,7 @@ DM_LIST         = ['Chris','Brian','Tommy']
 
 # Google
 GOOGLE_HANDLE   = '1dVZlsgtbUq0MGWV4kBg7m6Kwv2kQtbBd88KFHq9uumo'
-TREASURE_LOCATION = "Treasure Chart!A:G"
+TREASURE_LOCATION = "Treasure Chart!A2:G22"
 
 #JSON
 JSON_USERS      = 'config/users.json'
@@ -45,6 +45,15 @@ class Treasure(commands.Cog):
           self.users = json.load(users_file)
         self.dms = DM_LIST
 
+
+    ### TODO:
+    # Treasure commands
+    # !treasure [treasure name]
+    #   Get further info on a treasure. If in DM_chat or DM direct messages, give known/full description
+    # !treasure [character]
+    #   Get list of treasures for a specific character
+    # !treasure all
+    #   For players to get list of all treasures of characters of players in channel
     @commands.command(help="Use this to look at treasure descriptions for your current character")
     async def treasure(self, ctx, *args):
         args = [x.lower() for x in args]
@@ -55,18 +64,33 @@ class Treasure(commands.Cog):
         with open(JSON_CURRENT,'r') as current_file:
             current = json.load(current_file)
 
-        current_character = current[author]
+        filter_character =  None if is_dm else current[author]
 
-        treasure_names = []
+        # Mapping from characters to their treasure entries
+        characters_treasures = {}
+
         for treasure_entry in raw_data:
-            treasure_name = treasure_entry[0]
+            ## treasure_entry = [name, owner, attuned, attunement req, rarity, known desc, full desc]
             character = treasure_entry[1]
-            if character == current_character:
-                treasure_names.append(treasure_name)
+            if is_dm or filter_character == character:
+                if not character in characters_treasures:
+                    characters_treasures[character] = []
+                characters_treasures[character].append(treasure_entry)
+        
+        msg = ""
 
-        msg = "```{}```".format("\n".join(treasure_names))
+        for character in sorted(characters_treasures.keys()):
+            t_entries = characters_treasures[character]
+            owner = "Unowned" if character=="" else character
+            msg += owner + ":\n  "
+            msg += "\n  ".join(t[0] for t in t_entries)
+            msg += "\n"
 
-        await ctx.send(msg)
+        while len(msg) > (2000-6):
+            await ctx.send("```" + msg[0:2000-6] + "```")
+            msg = msg[2000-6:]
+
+        await ctx.send("```" + msg + "```")
 
 
 
