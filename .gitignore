@@ -7,3 +7,9 @@ __pycache__/*
 runtime.log
 new_main.py
 config/discord.json
+
+# token file
+bot.token
+*.pyc
+config/token.pickle
+*.log
